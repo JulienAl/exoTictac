@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Autocomplete</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/autocomplete.css">
+        <script src="js/autocomplete.js"></script>
+    </head>
+    <body>
+        <div class="header-container">
+            <header>
+                <h1><a href="#"><img src="img/trainlineLogo.svg" alt="logo trainline"></a></h1>
+                <div class="header-menu">
+                    <a href="#" class="main-btn">Créer un compte</a>
+                    <a href="#" class="main-btn">Se connecter</a>
+                    <a href="#" class="main-link">Aide</a>
+                    <button class="language">
+                        <img src="img/flagfr.svg">
+                    </button>
+                    <button class="currency">EUR</button>
+                </div>
+            </header>
+        </div>
+        
+        <div class="background-layer"></div>
+        <div class="main-wrapper">
+            <h2 class="home-title">Réservez vos billets de train et de bus.<br>En France et en Europe. </h2>
+            <h3 class="home-subtitle">Voyagez avec Trainline, leader indépendant de la vente de billets de train et de bus en Europe.</h3>
+            <div class="col-2 home-block">
+                <h4 class="home-block-title">Quel est votre trajet ?</h4>
+                <form>
+                    <div class="form-autocomplete">
+                        <input id="inputAutocomplete" autocomplete="off" type="text" name="myCountry" placeholder="Saisissez votre gare de départ…" required>
+                        <input id="inputTo" autocomplete="off" type="text" name="myCountry" placeholder="Saisissez votre gare d'arrivée…" required>
+                    </div>
+                    <div class="form-date">
+                            <input id="dateFrom" type="text" name="dateFrom" placeholder="Aller">
+                            <input id="dateTo" type="text" name="dateTo" placeholder="Retour">
+                    </div>
+                    <p class="preBtn-message"><a>Utiliser un code de réduction</a></p>
+                    <input type="submit" value="rechercher" class="search-btn home-btn">
+                </form>
+            </div>
+            <div class="col-2 home-block">
+                <h4 class="home-block-title" id="trainstation">Choisissez une gare de départ</h4>
+                <div id="result">
+                    <ul id="resultList"></ul>
+                </div>
+            </div>
+            
+        </div>
+            
+    </body>
+</html>
